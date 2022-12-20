@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box  ;
+}
+h1{
+    text-align: center;
+    font-size: 211%;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px ;
+    padding: 5px;
+
+}
+.container{
+    border: 2px black solid;
+    padding: 8px;
+    background-color: rgba(173, 173, 173, 0.308);
+}
+input[type = "text"],
+input[type = "name"],
+input[type = "number"],
+input[type = "password"],
+select, textarea{
+    width: 100%;
+    padding: 13px;
+    border: solid black;
+    margin: 10px;
+    
+}
+.spl{
+    border: black solid;
+}
+input[type = "submit"]{
+    color: white;
+    border: none ;
+    background-color: #01f0b4;
+    height: 25px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    /* float: right; */
+    /* margin-right: 550px; */
+    cursor: pointer;
+}
+input[type = "submit"]:hover{
+    background-color: rgb(79, 241, 74);
+}
+.cards{
+    height: 25px;
+    width: 80px;
+}

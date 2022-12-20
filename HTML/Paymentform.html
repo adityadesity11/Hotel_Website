@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="/CSS/formst.css">
+    <style>
+        .redirect a:hover{
+            cursor: pointer;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<form action="">
+    <h1>Payment Form</h1>
+    '*' marked are compulsory!!
+    <fieldset> 
+    <legend><h2>General information</h2></legend>
+    <p><b>Name: *</b><input type="text" name="name" required placeholder="name"></p>
+    <p><b>Gender: * </b> male<input type="radio" name="Gender" required id="gen">female<input type="radio" name="Gender" ></p>
+    <p><b>Address: </b><textarea name="address" id="add" cols="30" rows="5" placeholder="type your address"></textarea></p>
+    <p><b>Email: </b><input type="email" name="email" class="spl" placeholder="abc@xyz.com"></p>
+    <p><b>Date of Birth</b> <input type="date" class="spl" ></p>
+    <p><b>pincode *</b> <input type="pincode" name="pincode" required class="spl" placeholder="1233456"></p>
+</fieldset>
+<fieldset>
+ 
+   <legend><h2>Card information</h2></legend><b> 
+    <p class="card">Card type <img src="/Images/cards.jpg" alt="##" class="cards">
+        <select name="card_type" required id="">
+        <option value="">Select card type</option>
+        <option value="visa">Visa</option>
+        <option value="Mastercard">Mastercard</option>
+        <option value="Rupay">Rupay</option>
+    </select></p>
+    <p class="card">Card number * <input type="number" name="cardno" required id="cardno"></p>
+    <p class="card">Card expiry date * <input type="date"></p>
+    <p class="card">CVV * <input type="password" name="pass" required id="pass" placeholder="CVV"> </p>
+    <input type="submit" value="Pay now" class="card">
+    </b>
+</fieldset>
+</form>
+</div>
+<div class="cont2">
+    <button class="redirect"><a href="index.html">Click here to redirect to Homepage</a></button>
+</div>
+</body>
+</html>

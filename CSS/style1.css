@@ -1,0 +1,227 @@
+/* -----------------Home page-----------------------------*/
+.heading{
+    /* text-align: center; */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0px;
+    padding: 10px;
+    color: white;
+    background-color: blueviolet;
+    height: 6vh;
+    font-size: larger;
+    position: sticky;
+}
+
+.navbar{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 12px;
+    /* margin-right: 1px ; */
+    background-color: rgb(29, 26, 26);
+    opacity: 0.7;
+    position:sticky;
+}
+.navbar div a{
+    text-decoration: none;
+    color:white;
+    padding: 4px;
+}
+.navbar div a:hover{
+    cursor: pointer;
+    color: rgb(93, 4, 246);
+    background-color: white;
+    border: 5px;
+    border-radius: 5px;
+}
+.welcome{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: inherit;
+    color: #210348;
+    /* color: rgb(70, 5, 127); */
+    font-weight: 1000;
+
+}
+
+
+#slideover{
+    font-size: 3rem;
+    color: #fc0202;
+    /* background-color: yellow; */
+}
+.gallary-home{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 450px;
+}
+.gallary-home div{
+    font-family: cursive;
+    color: rgb(83, 246, 8);
+}
+#intro::before{
+    content: "";
+    position: absolute;
+    background: url('/Images/bg1.jpg') no-repeat center center/cover; 
+    height: 615px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.7;
+}
+
+/* --------------Gallery-------------------------- */
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 4px;
+    /* padding: 7px; */
+    
+}
+.image-box{
+    background-color: rgb(207, 246, 246);
+    /* border: 2px solid black; */
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.image-box:hover{
+    border: 3px solid blueviolet;
+    border-radius: 12px;
+    cursor:pointer;
+}
+/* -------------------------Book Now-------------------------------- */
+.form::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index:-1;
+    background: url('/Images/hotel1.jpg') no-repeat center center/cover;
+    opacity: 0.5;
+    height: 580px;
+}
+.form{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin: 30px; */
+    height: 460px;
+}
+.form input, .form textarea{
+    width: 100%;
+    /* padding-bottom: 33px; */
+    margin-bottom: 21px;
+}
+.btn{
+    display: inline-block;
+    margin-left: 105px;
+    
+    background-color: rgb(9, 240, 221);
+    padding: 10px;
+    
+}
+.btn a:hover{
+    color: red;
+}
+
+.btn a{
+    padding: 19px;
+    color: rgb(5, 5, 7);
+    
+    text-decoration: none;
+    /* padding: 10px; */
+}
+.contact{
+    opacity: 0.8;
+    border: none;
+    border-radius: 12px;
+    padding: 9px;
+    margin: 10px;
+    
+}
+.contact a{
+    text-decoration: none;
+    color: blueviolet;
+}
+.contact a:hover{
+    font-weight: bold;
+    color: #fc0202;
+    cursor: pointer;
+
+}
+.buttons-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* ------------------------About Page--------------------------------*/
+.description{
+    /* border: 2px solid blueviolet; */
+    margin: 60px;
+    padding: 15px;
+    background-color: rgb(173, 211, 211);
+    
+}
+.address{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 12px;
+}
+#founder-name{
+    margin-left: 45%;
+    margin-right: 40%;
+    width: 20%;
+}
+.owners{
+    /* border: 2px solid black; */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 20px;
+
+}
+.ownerinfo{
+    border: 2px solid blueviolet;
+    padding: 15px;
+    margin: 25px;
+
+}
+.foot{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(246, 240, 250);
+}
+.social_img{
+    margin-right: 30px;
+    padding: 7px;
+    border-radius: 12px;
+}
+
+/* ------------------------------Contact---------------- */
+.contact-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contact-table table{
+    /* padding: 80px; */
+    margin: 80px;
+    height: 20vh;
+}
